@@ -9,13 +9,22 @@
                     <p className='product-description'>{product.description}</p>
               <div className='product-price'>
                 ${product.price.toFixed(2)}
-                {product.originalPrice && (
+                {product.originalPrice!= null && (
                   <span className='original-price'>${product.originalPrice.toFixed(2)}</span>
                 )}
               </div>
                 <div className='product-actions'>
-                    <button className='btn btn-primary'>Add to Cart</button>
-                    <button className='btn btn-secondary'>View Details</button>
+                     <button
+                              className="btn btn-primary"
+                              type="button"
+                              disabled={product.stock === 0}
+                              aria-disabled={product.stock === 0}>
+                                  {product.stock === 0 ? "Out of Stock" : "Add to Cart"}
+                              </button>
+
+                            <button className="btn btn-secondary" type="button">
+                          View Details
+                  </button>
             </div>
         </div>
     </div>

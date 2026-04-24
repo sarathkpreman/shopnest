@@ -8,7 +8,7 @@ const Navbar = () => {
         <Link to="/">ShopNest</Link>
         <div className='nav-bar-link'>
            <Link to="/auth">Auth</Link>
-            <Link to="/checkout">Checkout</Link>`
+            <Link to="/checkout">Checkout</Link>
         </div>
           <div className='nav-auth'>
           <div className='nav-bar-auth'>
