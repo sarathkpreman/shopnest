@@ -251,7 +251,7 @@
   border-radius: 16px;
   background: #ffffff;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.3s ease;
+  animation: fade-in 0.3s ease;
 }
 
 /* Title */
