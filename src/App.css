@@ -233,3 +233,109 @@
 .product-actions .btn-secondary:hover {
   background-color: var(--color-secondary-bg);
 }
+
+
+
+/* Page background */
+.auth-page {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.auth-card {
+  width: 360px;
+  padding: 2rem;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Title */
+.auth-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #14532d;
+  margin-bottom: 1.5rem;
+}
+
+/* Form layout */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+/* Inputs */
+.auth-form input {
+  padding: 0.7rem 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+.auth-form input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 2px #dcfce7;
+}
+
+/* Button */
+.auth-btn {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background: #16a34a;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-btn:hover {
+  background: #15803d;
+}
+
+/* Footer */
+.auth-footer {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.auth-footer span {
+  margin-left: 4px;
+  color: #16a34a;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-footer span:hover {
+  text-decoration: underline;
+}
+
+.error {
+  color: #dc2626;
+  font-size: 0.78rem;
+  margin: -4px 0 0;
+}
+
+/* Subtle animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
