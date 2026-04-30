@@ -15,7 +15,7 @@ export default function AuthProvider({ children }) {
     const [user, setUser] = useState(()=> readJson("currentUser", null));
 
     function signup(username, email, password) {
-        const users = readJson("users", [])
+        const users = readJson("users", []);
 
         if(users.find((u) => u.username === username || u.email === email)) {
             return { success: false, message: "User already exists" };

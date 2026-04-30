@@ -10,14 +10,16 @@ const ProductDetails = () => {
     const fetchProduct = getProductById(id);
     const [product, setProduct] = useState(fetchProduct);
 
-    useEffect(()=> {
-
-        if(!fetchProduct) {
+   useEffect(()=> {
+        if (!fetchProduct) {
             navigate("/");
+            return;
         }
         setProduct(fetchProduct);
     }, [id, navigate, fetchProduct]);
-
+    if (!product) {
+        return null;
+    }
   return (
     <div className='page'>
         <div className='container'>
