@@ -1,5 +1,7 @@
  import React from 'react'
- 
+ import { Link } from 'react-router-dom'
+
+
  const ProductCard = ({product}) => {
    return (
       <div className='product-card'>
@@ -22,9 +24,9 @@
                                   {product.stock === 0 ? "Out of Stock" : "Add to Cart"}
                               </button>
 
-                            <button className="btn btn-secondary" type="button">
+                            <Link className="btn btn-secondary" type="button" to={`/products/${product.id}`}>
                           View Details
-                  </button>
+                  </Link>
             </div>
         </div>
     </div>

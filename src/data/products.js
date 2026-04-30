@@ -161,3 +161,7 @@ export const products = [
 export function getProduct() {
   return products
 }
+
+export function getProductById(id) {
+  return products.find((p) => p.id === parseInt(id));
+}

@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useContext } from "react";
 
 function readJson(key, fallback) {
     try{
@@ -9,7 +9,7 @@ function readJson(key, fallback) {
     }
 }
 
-export const AuthContext = createContext(null);
+const AuthContext = createContext(null);
 export default function AuthProvider({ children }) {
 
     const [user, setUser] = useState(()=> readJson("currentUser", null));
@@ -55,3 +55,12 @@ export default function AuthProvider({ children }) {
         </AuthContext.Provider>
     );
 }
+
+
+    export function useAuth() {
+        const context = useContext(AuthContext);
+        if (!context) {
+            throw new Error("useAuth must be used within an AuthProvider");
+        }
+        return context;
+    }
