@@ -1,16 +1,43 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+# ShopNest 🛒
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Minimal React e-commerce frontend built with modern UI principles and reusable components.
 
-## React Compiler
+### 🔗 [Live Preview](https://shopnest-lime.vercel.app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+</div>
 
-## Expanding the ESLint configuration
+## ✦ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```txt
+✓ Responsive Layout
+✓ Product Listing UI
+✓ Reusable Components
+✓ Modern React Structure
+✓ Fast Development with Vite
+✓ Clean Minimal Design
+```
+
+---
+
+## ✦ Tech Stack
+
+```bash
+Frontend    :: React
+Language    :: JavaScript
+Build Tool  :: Vite
+Styling     :: CSS
+```
+
+---
+
+## ✦ Run Locally
+
+```bash
+git clone https://github.com/sarathkpreman/shopnest
+cd shopnest
+npm install
+npm run dev
+```
